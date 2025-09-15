@@ -5,7 +5,6 @@ interface Props {
   pubDate: string;
   description: string;
   keywords: string[];
-
 }
 
 const months = [
@@ -23,7 +22,14 @@ const months = [
   "December",
 ];
 
-const { url, title, pubDate, description, keywords, thumbnail } = Astro.props;
+const {
+  url,
+  title,
+  pubDate,
+  description,
+  keywords,
+  //  thumbnail
+} = Astro.props;
 const processedDate = new Date(pubDate);
 ---
 
